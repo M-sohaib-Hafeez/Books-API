@@ -1,0 +1,29 @@
+### Create a new book
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+  "title": "The Pragmatic Programmer",
+  "author": "Andy Hunt",
+  "isbn": "978-0201616224"
+}
+
+### Get all books
+GET http://localhost:3000/api/books
+
+### Get a specific book (Change ID as needed)
+GET http://localhost:3000/api/books/1
+
+### Update a book
+PUT http://localhost:3000/api/books/1
+Content-Type: application/json
+
+{
+  "isAvailable": false
+}
+
+### Delete a book
+DELETE http://localhost:3000/api/books/1
+
+### Test root endpoint
+GET http://localhost:3000/
